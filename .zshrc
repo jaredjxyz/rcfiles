@@ -1,23 +1,10 @@
-# Python 3.5
-export PATH=/Library/Frameworks/Python.framework/Versions/3.5/bin:$PATH
+# Load local settings from .zshrc.local file
+if [ -f .zshrc.local ]; then
+	source .zshrc.local
+fi
 
-# Python 2.7
-export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
-
-# Custom
-export PATH="/Users/jaredjensen/miniconda3/bin:$PATH"
-
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/jaredjensen/.oh-my-zsh
-
-#CUDA Library
-export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:$DYLD_LIBRARY_PATH
-
-#CUDA binaries
-export PATH=/usr/local/cuda/bin:$PATH
+#Oh-my-zsh location
+export ZSH=.oh-my-zsh
 
 #ZSH TMUX PLUGIN
 export ZSH_TMUX_AUTOSTART=true
@@ -102,7 +89,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-eval $(thefuck --alias)
-export PATH=/usr/local/Cellar/brightness/1.2/bin:$PATH
 
