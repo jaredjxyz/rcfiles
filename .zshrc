@@ -3,12 +3,15 @@ if [ -f .zshrc.local ]; then
 	source .zshrc.local
 fi
 
-#Oh-my-zsh location
+# Oh-my-zsh location
 export ZSH=.oh-my-zsh
 
-#ZSH TMUX PLUGIN
+# ZSH TMUX PLUGIN
 export ZSH_TMUX_AUTOSTART=true
-export ZSH_TMUX_AUTOCONNECT=false
+# Autoconnect to tmux if sshing
+if [ ! -z "$SSH_CONNECTION"]; then
+	export ZSH_TMUX_AUTOCONNECT=false
+fi
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
