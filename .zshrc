@@ -10,7 +10,7 @@ export ZSH=.oh-my-zsh
 export ZSH_TMUX_AUTOSTART=true
 
 # Autoconnect to tmux if sshing
-if [ -z "$SSH_CONNECTION"]; then
+if [ -z "$SSH_CONNECTION" ]; then
 	export ZSH_TMUX_AUTOCONNECT=false
 fi
 
