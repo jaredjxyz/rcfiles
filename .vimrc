@@ -13,6 +13,9 @@ set hidden" Allows one to switch without saving
 set autoindent" Stays on current indent when no file-specific intenting
 set confirm" Ask to save changes instead of failing a command
 set visualbell" Show something on screen instead of making sound when wrong
+set background=dark" Dark background"
+syntax enable
+colorscheme solarized
 
 " Search
 set incsearch" Search as characters are entered
@@ -57,6 +60,8 @@ Plugin 'w0rp/ale'" Asynchronous linting
 Plugin 'airblade/vim-gitgutter'" Git gutter on the side
 
 Plugin 'sickill/vim-pasta'" Better put for vim
+
+Plugin 'altercation/vim-colors-solarized'" Solarized color scheme for vim
 
 " All of your Plugins must be added before the following line
 call vundle#end()" required
