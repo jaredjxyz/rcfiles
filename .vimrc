@@ -35,6 +35,8 @@ Plugin 'sickill/vim-pasta'" Better put for vim
 
 Plugin 'altercation/vim-colors-solarized'" Solarized color scheme for vim
 
+Plugin 'mbbill/undotree'" Undo tree for vim
+
 " All of your Plugins must be added before the following line
 call vundle#end()" required
 filetype plugin indent on" required
