@@ -37,6 +37,8 @@ Plugin 'altercation/vim-colors-solarized'" Solarized color scheme for vim
 
 Plugin 'mbbill/undotree'" Undo tree for vim
 
+Plugin 'scrooloose/nerdtree'" File explorer for vim
+
 " All of your Plugins must be added before the following line
 call vundle#end()" required
 filetype plugin indent on" required
@@ -63,6 +65,10 @@ let g:syntastic_check_on_wq = 0
 
 " Airline settings
 let g:airline#extensions#syntastic#enabled = 1
+
+" Nerdtree settings
+" If nerdtree is the only window open, close it
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " MY SETTINGS
 
