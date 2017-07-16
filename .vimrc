@@ -1,32 +1,4 @@
-" MY SETTINGS
-
-" UI
-set tabstop=4" Visual tab = 4 spaces
-set softtabstop=4" When editing, tab = 4 spaces wide
-set expandtab" tab button -> spaces
-set number" Show line numbers
-set showcmd" Show the last command you entered
-set wildmenu" visual autocomplete for command menu
-set lazyredraw" redraw only when we need to
-set showmatch" Highlight matching [{()}]
-set hidden" Allows one to switch without saving
-set autoindent" Stays on current indent when no file-specific intenting
-set confirm" Ask to save changes instead of failing a command
-set visualbell" Show something on screen instead of making sound when wrong
-set background=dark" Dark background"
-syntax enable
-colorscheme solarized
-
-" Search
-set incsearch" Search as characters are entered
-set hlsearch" Highlight matches
-set ignorecase" Ignore case
-set smartcase" ...Except when using capital letters
-
-" Movement
-nnoremap j gj" Move down visually when line wraps
-nnoremap k gk" Move up visually when line wraps
-
+" Jared's vim settings
 
 " VUNDLE STUFF
 
@@ -90,3 +62,31 @@ let g:syntastic_check_on_wq = 0
 " Airline settings
 let g:airline#extensions#syntastic#enabled = 1
 
+" MY SETTINGS
+
+" UI
+set tabstop=4" Visual tab = 4 spaces
+set softtabstop=4" When editing, tab = 4 spaces wide
+set expandtab" tab button -> spaces
+set number" Show line numbers
+set showcmd" Show the last command you entered
+set wildmenu" visual autocomplete for command menu
+set lazyredraw" redraw only when we need to
+set showmatch" Highlight matching [{()}]
+set hidden" Allows one to switch without saving
+set autoindent" Stays on current indent when no file-specific intenting
+set confirm" Ask to save changes instead of failing a command
+set visualbell" Show something on screen instead of making sound when wrong
+set background=dark" Dark background"
+syntax enable
+colorscheme solarized
+
+" Search
+set incsearch" Search as characters are entered
+set hlsearch" Highlight matches
+set ignorecase" Ignore case
+set smartcase" ...Except when using capital letters
+
+" Movement
+nnoremap j gj" Move down visually when line wraps
+nnoremap k gk" Move up visually when line wraps
