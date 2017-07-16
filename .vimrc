@@ -56,6 +56,8 @@ Plugin 'w0rp/ale'" Asynchronous linting
 
 Plugin 'airblade/vim-gitgutter'" Git gutter on the side
 
+Plugin 'sickill/vim-pasta'" Better put for vim
+
 " All of your Plugins must be added before the following line
 call vundle#end()" required
 filetype plugin indent on" required
