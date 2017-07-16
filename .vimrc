@@ -53,6 +53,9 @@ Plugin 'ctrlpvim/ctrlp.vim'" Find files and folders easily with :CtrlP
 Plugin 'scrooloose/nerdcommenter'" Commenting help
 
 Plugin 'w0rp/ale'" Asynchronous linting
+
+Plugin 'airblade/vim-gitgutter'" Git gutter on the side
+
 " All of your Plugins must be added before the following line
 call vundle#end()" required
 filetype plugin indent on" required
