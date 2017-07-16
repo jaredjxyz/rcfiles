@@ -40,7 +40,7 @@ Plugin 'VundleVim/Vundle.vim'" let Vundle manage Vundle, required
 
 Plugin 'tpope/vim-fugitive'" Git plugin
 
-Plugin 'scrooloose/syntastic'" Syntax checker
+"Plugin 'scrooloose/syntastic'" Syntax checker
 
 Plugin 'bling/vim-airline'" vim status bar
 
@@ -52,6 +52,7 @@ Plugin 'ctrlpvim/ctrlp.vim'" Find files and folders easily with :CtrlP
 
 Plugin 'scrooloose/nerdcommenter'" Commenting help
 
+Plugin 'w0rp/ale'" Asynchronous linting
 " All of your Plugins must be added before the following line
 call vundle#end()" required
 filetype plugin indent on" required
