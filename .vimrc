@@ -48,6 +48,10 @@ Plugin 'tpope/vim-sleuth'" Sleuth for detecting spaces vs tabs
 
 Plugin 'bronson/vim-trailing-whitespace'" Fix trailing whitespace
 
+Plugin 'ctrlpvim/ctrlp.vim'" Find files and folders easily with :CtrlP
+
+Plugin 'scrooloose/nerdcommenter'" Commenting help
+
 " All of your Plugins must be added before the following line
 call vundle#end()" required
 filetype plugin indent on" required
