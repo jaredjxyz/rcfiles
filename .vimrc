@@ -39,6 +39,8 @@ Plugin 'mbbill/undotree'" Undo tree for vim
 
 Plugin 'scrooloose/nerdtree'" File explorer for vim
 
+Plugin 'Valloric/YouCompleteMe'" Autocomplete
+
 " All of your Plugins must be added before the following line
 call vundle#end()" required
 filetype plugin indent on" required
