@@ -59,18 +59,22 @@ filetype plugin indent on" required
 
 " PLUGIN SETTINGS
 
-" Syntastic settings
-let g:syntastic_python_checkers = ['flake8']
-" let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
 " Airline settings
 let g:airline#extensions#syntastic#enabled = 1
 
 " Nerdtree settings
 " If nerdtree is the only window open, close it
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" ALE settings
+let g:ale_linters = {
+\  'python': ['flake8'],
+\  'html': ['tidy']
+\}
+
+" NERDTree settings
+" let NERDTreeMapOpenInTab='<ENTER>'" Open in new tab by default
+let NERDTreeQuitOnOpen=0
 
 " MY SETTINGS
 
