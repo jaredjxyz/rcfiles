@@ -83,6 +83,7 @@ set tabstop=4" Visual tab = 4 spaces
 set softtabstop=4" When editing, tab = 4 spaces wide
 set expandtab" tab button -> spaces
 set number" Show line numbers
+set relativenumber" Show line numbers relative to current location
 set showcmd" Show the last command you entered
 set wildmenu" visual autocomplete for command menu
 set lazyredraw" redraw only when we need to
@@ -92,8 +93,12 @@ set autoindent" Stays on current indent when no file-specific intenting
 set confirm" Ask to save changes instead of failing a command
 set visualbell" Show something on screen instead of making sound when wrong
 set background=dark" Dark background"
+
 syntax enable
 colorscheme solarized
+
+autocmd InsertEnter * :set norelativenumber
+autocmd InsertLEave * :set relativenumber
 
 " Search
 set incsearch" Search as characters are entered
