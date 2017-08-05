@@ -1,10 +1,10 @@
 # Load local settings from .zshrc.local file
-if [ -f .zshrc.local ]; then
-	source .zshrc.local
+if [ -f ~/.zshrc.local ]; then
+	source ~/.zshrc.local
 fi
 
 # Oh-my-zsh location
-export ZSH=.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # ZSH TMUX PLUGIN
 export ZSH_TMUX_AUTOSTART=true
