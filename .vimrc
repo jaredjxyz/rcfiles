@@ -109,3 +109,4 @@ set smartcase" ...Except when using capital letters
 " Movement
 nnoremap j gj" Move down visually when line wraps
 nnoremap k gk" Move up visually when line wraps
+set scrolloff=5" Make sure there are 5 lines below and above the cursor when scrolling
