@@ -61,7 +61,7 @@ ZSH_CUSTOM=~/.zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gitfast python docker sudo virtualenvwrapper tmux web-search nyan vi-mode z)
+plugins=(gitfast python docker sudo virtualenvwrapper tmux web-search nyan vi-mode z ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
