@@ -5,7 +5,7 @@
 set nocompatible" be iMproved, required
 filetype off" required
 
-" set the runtime path to include Vundle and initialize
+"set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
@@ -39,7 +39,7 @@ Plugin 'mbbill/undotree'" Undo tree for vim
 
 Plugin 'scrooloose/nerdtree'" File explorer for vim
 
-Plugin 'Valloric/YouCompleteMe'" Autocomplete
+Plugin 'tmux-plugins/vim-tmux-focus-events'" Make tmux focus events work
 
 " All of your Plugins must be added before the following line
 call vundle#end()" required
@@ -92,13 +92,16 @@ set hidden" Allows one to switch without saving
 set autoindent" Stays on current indent when no file-specific intenting
 set confirm" Ask to save changes instead of failing a command
 set visualbell" Show something on screen instead of making sound when wrong
-set background=dark" Dark background"
+set background=dark" Dark background
+set autoread" Re-read in on focus gained
 
-syntax enable
-colorscheme solarized
+syntax enable" Enable syntax highlighting
+colorscheme solarized" Cool color scheme, must have solarized plugin installed
 
-autocmd InsertEnter * :set norelativenumber
-autocmd InsertLEave * :set relativenumber
+autocmd InsertEnter * :set norelativenumber" Unset relative numbers in insert mode
+autocmd InsertLeave * :set relativenumber" Set relative numbers outside of insert mode
+
+au FocusLost * :wa" Save on focus lost
 
 " Search
 set incsearch" Search as characters are entered
