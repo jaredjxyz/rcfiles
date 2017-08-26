@@ -22,7 +22,7 @@ git fetch origin master
 git reset origin/master --hard
 
 # Download tmux
-sudo apt-get install libevent-dev autoconf make automake libncurses5-dev libncursesw5-dev -y
+sudo apt-get install libevent-dev autoconf make automake libncurses5-dev libncursesw5-dev gcc -y
 wget -qO- https://github.com/tmux/tmux/releases/download/2.5/tmux-2.5.tar.gz | tar xvz
 cd tmux-2.5
 ./configure && sudo make && sudo make install
