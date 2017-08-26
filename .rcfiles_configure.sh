@@ -17,7 +17,7 @@ rm -f omz_setup.sh omz_setup_fixed.sh
 
 # Download git repository
 git init
-git remote add origin git@github.com:jaredjxyz/rcfiles.git
+git remote add origin git@github.com:jaredjxyz/rcfiles.git || true # Will return true even if repository is already added
 git fetch origin master
 git reset origin/master --hard
 
