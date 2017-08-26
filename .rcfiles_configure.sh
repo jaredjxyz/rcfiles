@@ -15,6 +15,10 @@ grep -v "[ ]*env zsh$" omz_setup.sh > omz_setup_fixed.sh
 sh omz_setup_fixed.sh
 rm -f omz_setup.sh omz_setup_fixed.sh
 
+# Install virtualenvwrapper
+sudo apt-get install python3-pip -y
+pip3 install virtualenvwrapper
+
 # Download git repository
 git init
 git remote add origin git@github.com:jaredjxyz/rcfiles.git || true # Will return true even if repository is already added
