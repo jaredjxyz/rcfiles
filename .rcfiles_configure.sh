@@ -19,6 +19,9 @@ rm -f omz_setup.sh omz_setup_fixed.sh
 sudo apt-get install python3-pip -y
 pip3 install virtualenvwrapper
 
+# Make directory for z (zsh plugin) so it doesn't give us a warning the first time we use it
+mkdir .z
+
 # Download git repository
 git init
 git remote add origin git@github.com:jaredjxyz/rcfiles.git || true # Will return true even if repository is already added
