@@ -21,9 +21,6 @@ git remote add origin git@github.com:jaredjxyz/rcfiles.git
 git fetch origin master
 git reset origin/master --hard
 
-# Link my theme
-ln .jared.zsh-theme .oh-my-zsh/themes/
-
 # Download tmux
 sudo apt-get install libevent-dev autoconf make automake libncurses5-dev libncursesw5-dev -y
 wget -qO- https://github.com/tmux/tmux/releases/download/2.5/tmux-2.5.tar.gz | tar xvz
