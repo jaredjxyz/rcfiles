@@ -1,6 +1,6 @@
 # Sets up my linux environment.
 # Only tested on debian-based machines
-
+set -e
 cd ~
 
 # Install zsh
