@@ -33,7 +33,7 @@ rm -rf tmux-2.5
 sudo apt-get install vim -y
 
 # Download vundle
-if [ ! -d "~/.vim/bundle/Vundle.vim" ]; then
+if [ ! -d "${HOME}/.vim/bundle/Vundle.vim" ]; then
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 vim +PluginInstall +qall
