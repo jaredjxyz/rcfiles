@@ -20,7 +20,7 @@ sudo apt-get install python3-pip -y
 pip3 install virtualenvwrapper
 
 # Make directory for z (zsh plugin) so it doesn't give us a warning the first time we use it
-mkdir .z
+mkdir -p .z
 
 # Download git repository
 git init
