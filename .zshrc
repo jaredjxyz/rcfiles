@@ -65,6 +65,8 @@ plugins=(docker gitfast nyan python sudo tmux virtualenvwrapper vi-mode web-sear
 
 source $ZSH/oh-my-zsh.sh
 
+alias fucking="sudo"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
