@@ -10,6 +10,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
+"ffdjmasjfasdnfsmadf,nasdmfd,slanfmsdkalfnmasdklfnsdmakf,lndmsa,.fnmsd,f.nasdfm,g.nsdagfm,asdf.gnsdfam,g.snmsdg,.anmdgf,.dngfmasd,f.gnmsdf,.gfndsm,gf.nasdfmg,.adfngmdfa,.gnfsdm,s.ngfmad,.agnmasd,.gnasdfgm,.sdgnasdgfm,
 
 Plugin 'VundleVim/Vundle.vim'" let Vundle manage Vundle, required
 
@@ -112,4 +113,7 @@ set smartcase" ...Except when using capital letters
 " Movement
 nnoremap j gj" Move down visually when line wraps
 nnoremap k gk" Move up visually when line wraps
+nnoremap <Up> g<Up>" Same for up arrow key
+nnoremap <Down> g<Down>" Same for down arrow key
+
 set scrolloff=5" Make sure there are 5 lines below and above the cursor when scrolling
