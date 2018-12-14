@@ -1,18 +1,4 @@
-# Load local settings from .zshrc.local file
-if [ -f ~/.zshrc.local ]; then
-	source ~/.zshrc.local
-fi
-
-# Oh-my-zsh location
 export ZSH=~/.oh-my-zsh
-
-# ZSH TMUX PLUGIN
-export ZSH_TMUX_AUTOSTART=true
-
-# Autoconnect to tmux if sshing
-if [ -z "$SSH_CONNECTION" ]; then
-	export ZSH_TMUX_AUTOCONNECT=false
-fi
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -61,7 +47,7 @@ ZSH_CUSTOM=~/.zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker gitfast nyan python sudo tmux virtualenvwrapper vi-mode web-search z)
+plugins=(docker gitfast python sudo vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,3 +82,18 @@ alias fucking="sudo"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+[[ $TERM != "screen" ]] && exec tmux
+
+# History
+HISTCONTROL=ignoreboth
+setopt INC_APPEND_HISTORY
+HITSIZE=100000
+HISTFILESIZE=100000
+
+# DriveAI specific
+export DRIVEAI_ROOT=/fig/home/jaredj/driveai
+export DOCKER_HOME=$HOME
+export DAI_TOPICS_ROOT=/tmp/dps_topics
+
+export PATH=$PATH:$DRIVEAI_ROOT/infra/docker/offboard
+alias mpstart='source ~/driveai/build/setup.sh && (launch ~/driveai/vehicle_config/nv200/motion_planner_nv200.toml >& /tmp/mp.out &) && watch -n 1 tail -n 60 /tmp/mp.out'
